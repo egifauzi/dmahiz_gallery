@@ -7,11 +7,9 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 137),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-      
+        padding: EdgeInsets.symmetric(horizontal: 137),
+        child: SingleChildScrollView(
+          child: Column(children: [
             Column(
               children: [
                 Text(
@@ -34,13 +32,13 @@ class ProductPage extends StatelessWidget {
             SizedBox(
               height: 42,
             ),
-            
+
             //3 top widgets
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Stack(
-                  children : [ Column(
+                Stack(children: [
+                  Column(
                     children: [
                       Image.asset(
                         'widgetNews1.png',
@@ -69,35 +67,35 @@ class ProductPage extends StatelessWidget {
                           color: Colors.black,
                           height: 62,
                           hoverColor: Colors.pink[200],
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 133, vertical: 16),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 133, vertical: 16),
                           minWidth: 426,
                           onPressed: () {},
                           child: Text(
                             'SEE DETAILS',
                             style: GoogleFonts.raleway(
                                 fontSize: 24, color: Colors.white),
-                          )), 
+                          )),
                     ],
                   ),
                   Positioned(
-                    top: 5,
-                    left: 0.0,
-                    child: Stack(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.symmetric(vertical: 11),
-                          color: Color(0xffC09C9D),
-                          width: 152,
-                          height: 48,
-                          child: Text('NEW', style: GoogleFonts.raleway(fontSize:24, color: Colors.white), textAlign: TextAlign.center),
-                        )
-                      ],
-                    ))
-                  ,
-                  
-                  ]
-                ),
+                      top: 5,
+                      left: 0.0,
+                      child: Stack(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(vertical: 11),
+                            color: Color(0xffC09C9D),
+                            width: 152,
+                            height: 48,
+                            child: Text('NEW',
+                                style: GoogleFonts.raleway(
+                                    fontSize: 24, color: Colors.white),
+                                textAlign: TextAlign.center),
+                          )
+                        ],
+                      )),
+                ]),
                 Column(
                   children: [
                     Image.asset(
@@ -135,7 +133,7 @@ class ProductPage extends StatelessWidget {
                           'SEE DETAILS',
                           style: GoogleFonts.raleway(
                               fontSize: 24, color: Colors.white),
-                        )), 
+                        )),
                   ],
                 ),
                 Column(
@@ -175,7 +173,7 @@ class ProductPage extends StatelessWidget {
                           'SEE DETAILS',
                           style: GoogleFonts.raleway(
                               fontSize: 24, color: Colors.white),
-                        )), 
+                        )),
                   ],
                 ),
               ],
@@ -224,43 +222,60 @@ class ProductPage extends StatelessWidget {
                           'SEE DETAILS',
                           style: GoogleFonts.raleway(
                               fontSize: 24, color: Colors.white),
-                        )), 
-                    
+                        )),
                   ],
                 ),
-            
-            //image mid bot,
-            
+
+                //image mid bot,
+
                 Stack(
                   children: [
                     Image.asset('imgProduct.png', width: 426, height: 600),
                     Column(
-                      
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        SizedBox(height: 161,),
+                        SizedBox(
+                          height: 161,
+                        ),
                         Container(
-                          margin: EdgeInsets.only(left: 59),
-                          child: Text('SIGN UP\nAND JOIN US', style: GoogleFonts.raleway(fontSize: 57, fontWeight: FontWeight.bold, color:Colors.white), textAlign: TextAlign.right,)),
-                        SizedBox(height: 28,),
+                            margin: EdgeInsets.only(left: 59),
+                            child: Text(
+                              'SIGN UP\nAND JOIN US',
+                              style: GoogleFonts.raleway(
+                                  fontSize: 57,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                              textAlign: TextAlign.right,
+                            )),
+                        SizedBox(
+                          height: 28,
+                        ),
                         Container(
-                          margin:EdgeInsets.only(left: 183) ,
-                          child: Text('And get 10% off\nyour first order', style: GoogleFonts.raleway(fontSize:32, fontWeight: FontWeight.w400, color: Colors.white), textAlign: TextAlign.right,)),
-                        SizedBox(height: 98,),
+                            margin: EdgeInsets.only(left: 183),
+                            child: Text(
+                              'And get 10% off\nyour first order',
+                              style: GoogleFonts.raleway(
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.white),
+                              textAlign: TextAlign.right,
+                            )),
+                        SizedBox(
+                          height: 98,
+                        ),
                         Container(
                           margin: EdgeInsets.only(left: 256),
                           child: FlatButton(
                             padding: EdgeInsets.symmetric(vertical: 13),
-                            height: 50 ,
+                            height: 50,
                             minWidth: 156,
                             color: Colors.black45,
                             hoverColor: Colors.pink[200],
-                            onPressed: () {}, 
+                            onPressed: () {},
                             child: Text(
                               'SIGN IN',
                               style: GoogleFonts.raleway(
-                            fontSize: 24, color: Colors.white
-                              ),
+                                  fontSize: 24, color: Colors.white),
                             ),
                           ),
                         )
@@ -268,7 +283,7 @@ class ProductPage extends StatelessWidget {
                     )
                   ],
                 ),
-            
+
                 Column(
                   children: [
                     Image.asset(
@@ -306,14 +321,15 @@ class ProductPage extends StatelessWidget {
                           'SEE DETAILS',
                           style: GoogleFonts.raleway(
                               fontSize: 24, color: Colors.white),
-                        )), 
+                        )),
                   ],
                 ),
               ],
             ),
-            SizedBox(height: 77,)
+            SizedBox(
+              height: 77,
+            )
           ]),
-      )
-    );
+        ));
   }
 }

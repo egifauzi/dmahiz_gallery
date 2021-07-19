@@ -11,7 +11,6 @@ class NewsPage extends StatelessWidget {
       child: Container(
         color: Colors.white,
         child: Column(
-          
           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Stack(
@@ -31,31 +30,44 @@ class NewsPage extends StatelessWidget {
                       SizedBox(
                         height: 30,
                       ),
-                      Text('Undang Teman Anda', style: GoogleFonts.raleway(fontSize:49, fontWeight: FontWeight.w300, color: Colors.white)),
-                      SizedBox(height: 13,),
-                      Text('Bagikan pengalaman anda dalam menggunakan\nproduk kami dan dapatkan potongan 20% di\nproduk selanjutnya yang kamu pesan', style: GoogleFonts.raleway(fontSize: 20, color: Colors.white),textAlign: TextAlign.end,),
+                      Text('Undang Teman Anda',
+                          style: GoogleFonts.raleway(
+                              fontSize: 49,
+                              fontWeight: FontWeight.w300,
+                              color: Colors.white)),
+                      SizedBox(
+                        height: 13,
+                      ),
+                      Text(
+                        'Bagikan pengalaman anda dalam menggunakan\nproduk kami dan dapatkan potongan 20% di\nproduk selanjutnya yang kamu pesan',
+                        style: GoogleFonts.raleway(
+                            fontSize: 20, color: Colors.white),
+                        textAlign: TextAlign.end,
+                      ),
                       SizedBox(
                         height: 62,
                       ),
-                      Text('*Klik di bawah ini untuk informasi lebih lanjut ', style: GoogleFonts.raleway(fontSize: 13, color: Colors.white),
-                        
+                      Text(
+                        '*Klik di bawah ini untuk informasi lebih lanjut ',
+                        style: GoogleFonts.raleway(
+                            fontSize: 13, color: Colors.white),
                       ),
                       SizedBox(
                         height: 15,
                       ),
                       FlatButton(
-                        color:  Color(0xff403737),
-                        height: 61,
-                        hoverColor: Colors.pink[200],
-                        padding: EdgeInsets.symmetric(horizontal: 133, vertical: 16),
-                        minWidth:424 ,
-
-
-                        
-                        onPressed: () {}, 
-                        child: Text('MORE DETAILS', style: GoogleFonts.raleway(fontSize:24, color: Colors.white),)), 
-                        
-                      
+                          color: Color(0xff403737),
+                          height: 61,
+                          hoverColor: Colors.pink[200],
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 133, vertical: 16),
+                          minWidth: 424,
+                          onPressed: () {},
+                          child: Text(
+                            'MORE DETAILS',
+                            style: GoogleFonts.raleway(
+                                fontSize: 24, color: Colors.white),
+                          )),
                       SizedBox(
                         height: 68,
                       ),
@@ -70,7 +82,9 @@ class NewsPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(width: 51,),
+                SizedBox(
+                  width: 51,
+                ),
                 Column(
                   children: [
                     Image.asset(
@@ -82,7 +96,7 @@ class NewsPage extends StatelessWidget {
                       height: 44,
                     ),
                     Text(
-                      'JJ glow Moisturizing lagi ada\npotongan harga sebesar 30%,\nAyo segera cek karena event ini\nterbatas.', 
+                      'JJ glow Moisturizing lagi ada\npotongan harga sebesar 30%,\nAyo segera cek karena event ini\nterbatas.',
                       style: GoogleFonts.raleway(
                         fontSize: 20,
                       ),
@@ -102,14 +116,14 @@ class NewsPage extends StatelessWidget {
                       'widgetNews2.png',
                       width: 273,
                       height: 368,
-
                     ),
-                    SizedBox(height: 44,),
+                    SizedBox(
+                      height: 44,
+                    ),
                     Text(
                       'Acne Night lagi ada potongan\nharga sebesar 30%,\nAyo segera cek karena event ini\nterbatas. ',
                       style: GoogleFonts.raleway(
                         fontSize: 20,
-
                       ),
                       textAlign: TextAlign.center,
                     ),

@@ -23,10 +23,13 @@ class ContactPage extends StatelessWidget {
                 style: GoogleFonts.raleway(
                     fontSize: 43, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 28,),
+              SizedBox(
+                height: 28,
+              ),
               Text(
-                'Our mailing addres is :\nCiputri, Singaparna,\nTasikmalaya.\nPhone: 085603588791', 
-                style: GoogleFonts.raleway(fontSize: 17,  letterSpacing: 2, height: 1.8),
+                'Our mailing addres is :\nCiputri, Singaparna,\nTasikmalaya.\nPhone: 085603588791',
+                style: GoogleFonts.raleway(
+                    fontSize: 17, letterSpacing: 2, height: 1.8),
                 textAlign: TextAlign.left,
               ),
               SizedBox(
@@ -81,7 +84,9 @@ class ContactPage extends StatelessWidget {
               children: [
                 Text(
                   'Great vision great people is irrelevant.\nLet’s work together.',
-                  style: GoogleFonts.raleway(fontSize: 24,),
+                  style: GoogleFonts.raleway(
+                    fontSize: 24,
+                  ),
                   textAlign: TextAlign.left,
                 ),
                 SizedBox(
@@ -153,7 +158,9 @@ class ContactPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment:
@@ -170,8 +177,8 @@ class ContactPage extends StatelessWidget {
                     Container(
                       width: 652,
                       height: 55,
-                      decoration:
-                          BoxDecoration(border: Border.all(color: Colors.black)),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black)),
                       child: TextField(
                         decoration: InputDecoration(border: InputBorder.none),
                         maxLines: 1,
@@ -244,24 +251,22 @@ class ContactPage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 44,),
-              
-              FlatButton(
+                SizedBox(
+                  height: 44,
+                ),
+                FlatButton(
                     color: Color(0xff393A3A),
                     height: 59,
                     hoverColor: Colors.amber,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 52, vertical: 6),
+                    padding: EdgeInsets.symmetric(horizontal: 52, vertical: 6),
                     minWidth: 183,
                     onPressed: () {},
                     child: Text(
                       'submit',
                       style: GoogleFonts.raleway(
                           fontSize: 24, color: Colors.white),
-                    )), 
+                    )),
               ],
-           
-           
             ),
           )
         ],

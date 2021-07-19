@@ -35,21 +35,23 @@ class FooterWidget extends StatelessWidget {
                       children: [
                         Center(
                           child: Container(
-                            width: 201,
-                            height: 28,
-                            margin: const EdgeInsets.all(15.0),
-                            padding: const EdgeInsets.all(3.0),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.white)),
-                            child: TextField(
+                              width: 201,
+                              height: 28,
+                              margin: const EdgeInsets.all(15.0),
+                              padding: const EdgeInsets.all(3.0),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.white)),
+                              child: TextField(
                                 obscureText: true,
                                 decoration: InputDecoration(
-                                  border: OutlineInputBorder(),
-                                  labelText: '       Whats your E-mail', labelStyle: GoogleFonts.raleway(fontSize: 14, color: Colors.white,),
-                                alignLabelWithHint: true
-                                ),
-                              )
-                          ),
+                                    border: OutlineInputBorder(),
+                                    labelText: '       Whats your E-mail',
+                                    labelStyle: GoogleFonts.raleway(
+                                      fontSize: 14,
+                                      color: Colors.white,
+                                    ),
+                                    alignLabelWithHint: true),
+                              )),
                         ),
                         SizedBox(
                           height: 100,
@@ -245,8 +247,7 @@ class FooterWidget extends StatelessWidget {
                                 height: 25,
                               ),
                               FlatButton(
-
-                              hoverColor: Colors.pink,
+                                hoverColor: Colors.pink,
                                 onPressed: () {},
                                 child: Text(
                                   'Sitemap',

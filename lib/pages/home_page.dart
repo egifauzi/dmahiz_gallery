@@ -376,13 +376,7 @@ class Item1 extends StatelessWidget {
                 minWidth: 226,
                 padding: EdgeInsets.symmetric(vertical: 10),
                 onPressed: () {},
-                child:
-                    // Container(
-                    //   padding: EdgeInsets.symmetric(vertical: 6),
-                    //   width: 226,
-                    //   height: 50,
-                    //   decoration: BoxDecoration(color: Color(0xffC09C9D)),
-                    Text(
+                child: Text(
                   'ORDER NOW',
                   style: GoogleFonts.poppins(fontSize: 24, color: Colors.white),
                   textAlign: TextAlign.center,
@@ -438,13 +432,7 @@ class Item2 extends StatelessWidget {
                 minWidth: 226,
                 padding: EdgeInsets.symmetric(vertical: 10),
                 onPressed: () {},
-                child:
-                    // Container(
-                    //   padding: EdgeInsets.symmetric(vertical: 6),
-                    //   width: 226,
-                    //   height: 50,
-                    //   decoration: BoxDecoration(color: Color(0xffC09C9D)),
-                    Text(
+                child: Text(
                   'ORDER NOW',
                   style: GoogleFonts.poppins(fontSize: 24, color: Colors.white),
                   textAlign: TextAlign.center,

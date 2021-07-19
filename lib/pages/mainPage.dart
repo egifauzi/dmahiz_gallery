@@ -84,11 +84,9 @@ class _MainPageState extends State<MainPage> {
                         width: 40,
                         height: 40,
                       ),
-
                       SizedBox(
                         width: 29,
                       ),
-
                       Container(
                         // height: 20,
                         width: 227,
@@ -108,24 +106,6 @@ class _MainPageState extends State<MainPage> {
                           ),
                         ),
                       )
-
-                      // Column(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      //   children: [
-                      //     Container(
-                      //       alignment: Alignment.topLeft,
-                      //       child: Text(
-                      //         'search',
-                      //         style: GoogleFonts.raleway(fontSize: 26, color:Color(0xffC09C9D) ),textAlign: TextAlign.left,
-                      //       ),
-                      //     ),
-                      //     Container(
-                      //       width: 227,
-                      //       height: 1,
-                      //       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.black),
-                      //     )
-                      //   ],
-                      // )
                     ],
                   ),
                   //logo
@@ -187,9 +167,7 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
             ),
-            // SizedBox(
-            //   height: 20,
-            // ),
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 180),
               child: Row(
@@ -253,10 +231,6 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
-
-            //NOTE: FOOTER
-            // SizedBox(height: 195,),
-            // FooterWidget()
           ],
         ),
       ),

@@ -33,7 +33,9 @@ class AboutUsPage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.raleway(fontSize: 25),
               ),
-              SizedBox(height: 160,),
+              SizedBox(
+                height: 160,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -42,8 +44,9 @@ class AboutUsPage extends StatelessWidget {
                     splashColor: Colors.black,
                     height: 240,
                     minWidth: 240,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(150)),
-                    onPressed: () {}, 
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(150)),
+                    onPressed: () {},
                     child: Image.asset(
                       'bigWA.png',
                       width: 210,

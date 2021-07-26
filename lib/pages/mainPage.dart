@@ -143,23 +143,23 @@ class _MainPageState extends State<MainPage> {
                               )
                             ],
                           ),
-                          FlatButton(
-                            autofocus: false,
-                            minWidth: 0,
+                          // FlatButton(
+                          //   autofocus: false,
+                          //   minWidth: 0,
 
-                            textColor: Colors.black,
-                            // hoverColor: Colors.black,
-                            highlightColor: Colors.pink,
+                          //   textColor: Colors.black,
+                          //   // hoverColor: Colors.black,
+                          //   highlightColor: Colors.pink,
 
-                            onPressed: () {},
-                            child: Text(
-                              'LOG IN OR REGISTER',
-                              style: GoogleFonts.raleway(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w300,
-                              ),
-                            ),
-                          )
+                          //   onPressed: () {},
+                          //   child: Text(
+                          //     'LOG IN OR REGISTER',
+                          //     style: GoogleFonts.raleway(
+                          //       fontSize: 18,
+                          //       fontWeight: FontWeight.w300,
+                          //     ),
+                          //   ),
+                          // )
                         ],
                       )
                     ],
@@ -226,7 +226,7 @@ class _MainPageState extends State<MainPage> {
                         ],
                       ),
                     ),
-                    FooterWidget()
+                    
                   ],
                 ),
               ),

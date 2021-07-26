@@ -11,7 +11,7 @@ class FooterWidget extends StatelessWidget {
       height: 396,
       color: Color(0xff393A3A),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 5),
+        padding: const EdgeInsets.only(left: 70, right: 70, top: 5, bottom: 0),
         child: Column(
           children: [
             SizedBox(
@@ -276,6 +276,27 @@ class FooterWidget extends StatelessWidget {
                     )),
               ],
             ),
+            SizedBox(
+              height: 42,
+            ),
+            Column(
+              children: [
+                RichText(
+                  textAlign: TextAlign.end,
+                  text: TextSpan(
+                        text: 'Copyright© 2021',
+                        style: GoogleFonts.raleway(fontSize: 14, color:Colors.white24),
+                        children: <TextSpan>[
+                          
+                          TextSpan(text: " D'Mahiz Co. ",style: GoogleFonts.raleway(color: Color(0xffC09C9D))
+                              ),
+                          TextSpan(text: "Products LLC",),
+                        ],
+                      ),
+                    ),
+                    
+              ],
+            )
           ],
         ),
       ),

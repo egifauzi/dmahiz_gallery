@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dmahiz_gallery/pages/widgets/footer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -89,8 +90,10 @@ class _HomePageState extends State<HomePage> {
                         Positioned(
                             top: 210,
                             right: 17,
-                            child: Text(
+                            child: SelectableText(
                               'Merawat Kulit lebih baik\ndaripada menutupinya\ndengan make-up',
+                              enableInteractiveSelection: true,
+                              toolbarOptions: ToolbarOptions(selectAll: true),
                               style: GoogleFonts.raleway(
                                   fontSize: 37,
                                   color: Colors.white,
@@ -132,8 +135,10 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               // SizedBox(height: 250,),
-                              Text(
+                              SelectableText(
                                 'Delivery',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                     fontSize: 20,
                                     color: Colors.white,
@@ -143,8 +148,10 @@ class _HomePageState extends State<HomePage> {
                               SizedBox(
                                 height: 8,
                               ),
-                              Text(
+                              SelectableText(
                                 'Enjoy Free standar doll on every order.',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                   color: Colors.white,
                                   fontSize: 15,
@@ -207,8 +214,10 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               // SizedBox(height: 250,),
-                              Text(
+                              SelectableText(
                                 '24/7',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                     fontSize: 20,
                                     color: Colors.white,
@@ -218,8 +227,10 @@ class _HomePageState extends State<HomePage> {
                               SizedBox(
                                 height: 8,
                               ),
-                              Text(
+                              SelectableText(
                                 'Contact us in 24 hours a day\nand a week',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                   color: Colors.white,
                                   fontSize: 15,
@@ -282,8 +293,10 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               // SizedBox(height: 250,),
-                              Text(
+                              SelectableText(
                                 'BUY NOW PAY LATER',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                     fontSize: 20,
                                     color: Colors.white,
@@ -293,8 +306,11 @@ class _HomePageState extends State<HomePage> {
                               SizedBox(
                                 height: 8,
                               ),
-                              Text(
+                              SelectableText(
+                                
                                 'In four interest-free installments with\nDana, Gopay, OVO, etc.',
+                                enableInteractiveSelection: true,
+                                toolbarOptions: ToolbarOptions(selectAll: true),
                                 style: GoogleFonts.raleway(
                                   color: Colors.white,
                                   fontSize: 15,
@@ -328,6 +344,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          FooterWidget()
         ],
       ),
     );
@@ -359,8 +376,10 @@ class Item1 extends StatelessWidget {
               SizedBox(
                 height: 46,
               ),
-              Text(
+              SelectableText(
                 'Produk kecantikan yang sudah tidak asing lagi namanya\ndan juga terbukti khasiatnya. Ya benar sekali,\nMS glow. Sekarang kami menyediakanya\nuntuk anda dengan berbagai macam jenis produk,\ndan juga kami memudahkan anda untuk lebih bisa\nmendapatkan atau memiliki produk ini.',
+                enableInteractiveSelection: true,
+                toolbarOptions: ToolbarOptions(selectAll: true),
                 style: GoogleFonts.raleway(fontSize: 24, color: Colors.white),
                 textAlign: TextAlign.center,
               ),
@@ -415,8 +434,10 @@ class Item2 extends StatelessWidget {
               SizedBox(
                 height: 46,
               ),
-              Text(
+              SelectableText(
                 'Filters are great\nbut great skin\nis better.',
+                enableInteractiveSelection: true,
+                toolbarOptions: ToolbarOptions(selectAll: true),
                 style: GoogleFonts.raleway(fontSize: 24, color: Colors.white),
                 textAlign: TextAlign.center,
               ),
@@ -471,8 +492,10 @@ class Item3 extends StatelessWidget {
               SizedBox(
                 height: 46,
               ),
-              Text(
+              SelectableText(
                 "Dont Panic,\nit's organic",
+                enableInteractiveSelection: true,
+                toolbarOptions: ToolbarOptions(selectAll: true),
                 style: GoogleFonts.raleway(fontSize: 44, color: Colors.black),
                 textAlign: TextAlign.center,
               ),
@@ -533,8 +556,10 @@ class Item4 extends StatelessWidget {
               SizedBox(
                 height: 46,
               ),
-              Text(
+              SelectableText(
                 "There's no glowing\nwithout double cleansing",
+                enableInteractiveSelection: true,
+                toolbarOptions: ToolbarOptions(selectAll: true),
                 style: GoogleFonts.raleway(fontSize: 35, color: Colors.white),
                 textAlign: TextAlign.center,
               ),

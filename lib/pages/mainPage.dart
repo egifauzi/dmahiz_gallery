@@ -118,50 +118,51 @@ class _MainPageState extends State<MainPage> {
                   //user profile
                   Row(
                     children: [
-                      Image.asset(
-                        'head.png',
-                        width: 40,
-                        height: 40,
-                      ),
-                      SizedBox(
-                        width: 33,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Row(
-                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(' Hi, User',
-                                  style: GoogleFonts.poppins(fontSize: 26)),
-                              SizedBox(width: 67),
-                              Image.asset(
-                                'arrowBlack.png',
-                                width: 18,
-                                height: 13,
-                              )
-                            ],
-                          ),
-                          // FlatButton(
-                          //   autofocus: false,
-                          //   minWidth: 0,
+                      SizedBox(width: 140,)
+                      // Image.asset(
+                      //   'head.png',
+                      //   width: 40,
+                      //   height: 40,
+                      // ),
+                      // SizedBox(
+                      //   width: 33,
+                      // ),
+                      // Column(
+                      //   crossAxisAlignment: CrossAxisAlignment.start,
+                      //   mainAxisAlignment: MainAxisAlignment.start,
+                      //   children: [
+                      //     Row(
+                      //       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //       children: [
+                      //         Text(' Hi, User',
+                      //             style: GoogleFonts.poppins(fontSize: 26)),
+                      //         SizedBox(width: 67),
+                      //         Image.asset(
+                      //           'arrowBlack.png',
+                      //           width: 18,
+                      //           height: 13,
+                      //         )
+                      //       ],
+                      //     ),
+                      //     // FlatButton(
+                      //     //   autofocus: false,
+                      //     //   minWidth: 0,
 
-                          //   textColor: Colors.black,
-                          //   // hoverColor: Colors.black,
-                          //   highlightColor: Colors.pink,
+                      //     //   textColor: Colors.black,
+                      //     //   // hoverColor: Colors.black,
+                      //     //   highlightColor: Colors.pink,
 
-                          //   onPressed: () {},
-                          //   child: Text(
-                          //     'LOG IN OR REGISTER',
-                          //     style: GoogleFonts.raleway(
-                          //       fontSize: 18,
-                          //       fontWeight: FontWeight.w300,
-                          //     ),
-                          //   ),
-                          // )
-                        ],
-                      )
+                      //     //   onPressed: () {},
+                      //     //   child: Text(
+                      //     //     'LOG IN OR REGISTER',
+                      //     //     style: GoogleFonts.raleway(
+                      //     //       fontSize: 18,
+                      //     //       fontWeight: FontWeight.w300,
+                      //     //     ),
+                      //     //   ),
+                      //     // )
+                      //   ],
+                      // )
                     ],
                   )
                 ],

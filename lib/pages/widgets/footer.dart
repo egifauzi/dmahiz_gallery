@@ -284,17 +284,19 @@ class FooterWidget extends StatelessWidget {
                 RichText(
                   textAlign: TextAlign.end,
                   text: TextSpan(
-                        text: 'Copyright© 2021',
-                        style: GoogleFonts.raleway(fontSize: 14, color:Colors.white24),
-                        children: <TextSpan>[
-                          
-                          TextSpan(text: " D'Mahiz Co. ",style: GoogleFonts.raleway(color: Color(0xffC09C9D))
-                              ),
-                          TextSpan(text: "Products LLC",),
-                        ],
+                    text: 'Copyright© 2021',
+                    style: GoogleFonts.raleway(
+                        fontSize: 14, color: Colors.white24),
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: " D'Mahiz Co. ",
+                          style: GoogleFonts.raleway(color: Color(0xffC09C9D))),
+                      TextSpan(
+                        text: "Products LLC",
                       ),
-                    ),
-                    
+                    ],
+                  ),
+                ),
               ],
             )
           ],

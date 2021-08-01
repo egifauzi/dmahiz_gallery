@@ -11,12 +11,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 0;
+  // int _currentIndex = 0;
   List cardList = [
     Item1(),
     Item2(),
     Item3(),
-    Item4(),
+    // Item4(),
   ];
   List<T> map<T>(List list, Function handler) {
     List<T> result = [];
@@ -42,13 +42,13 @@ class _HomePageState extends State<HomePage> {
               // autoPlayCurve: Curves.fastOutSlowIn,
 
               pauseAutoPlayOnTouch: true,
-              // initialPage: 0,
+              initialPage: 1,
               // viewportFraction: 1,
 
               // aspectRatio: 2.0,
               onPageChanged: (index, reason) {
                 setState(() {
-                  _currentIndex = index;
+                  // _currentIndex = index;
                 });
               },
             ),
@@ -63,7 +63,8 @@ class _HomePageState extends State<HomePage> {
             }).toList(),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 195, horizontal: 70),
+            // padding: EdgeInsets.symmetric(vertical: 195, horizontal: 70),
+            padding: EdgeInsets.symmetric(vertical: 100, horizontal: 70),
             child: Row(
               children: [
                 Flexible(
@@ -357,21 +358,21 @@ class Item1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(
-          'csv1.png',
+        Image.network(
+          'https://images.unsplash.com/photo-1627820671848-b7fe16a4ce68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1192&q=80',
           width: MediaQuery.of(context).size.width,
           height: 800,
-          fit: BoxFit.cover,
+          fit: BoxFit.fitWidth,
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(156, 137, 0, 174),
+          padding: EdgeInsets.fromLTRB(90, 137, 0, 174),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
                 'logoWhite.png',
-                width: 168.33,
-                height: 75.49,
+                width: 268.33,
+                height: 175.49,
               ),
               SizedBox(
                 height: 46,
@@ -380,7 +381,7 @@ class Item1 extends StatelessWidget {
                 'Produk kecantikan yang sudah tidak asing lagi namanya\ndan juga terbukti khasiatnya. Ya benar sekali,\nMS glow. Sekarang kami menyediakanya\nuntuk anda dengan berbagai macam jenis produk,\ndan juga kami memudahkan anda untuk lebih bisa\nmendapatkan atau memiliki produk ini.',
                 enableInteractiveSelection: true,
                 toolbarOptions: ToolbarOptions(selectAll: true),
-                style: GoogleFonts.raleway(fontSize: 24, color: Colors.white),
+                style: GoogleFonts.raleway(fontSize: 24, color: Colors.white70),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
@@ -415,21 +416,27 @@ class Item2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        // Image.network(
+        //   'https://images.unsplash.com/photo-1567721971759-12402aedabf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
+        //   width: MediaQuery.of(context).size.width,
+        //   height: 800,
+        //   fit: BoxFit.cover,
+        // ),
         Image.network(
-          'https://images.unsplash.com/photo-1567721971759-12402aedabf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
+          'https://images.unsplash.com/photo-1627820671852-817739514239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1192&q=80',
           width: MediaQuery.of(context).size.width,
           height: 800,
-          fit: BoxFit.cover,
+          fit: BoxFit.fitWidth,
         ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(156, 137, 0, 174),
+        Container(
+          margin: EdgeInsets.fromLTRB(156, 120, 0, 174),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 'logoWhite.png',
-                width: 168.33,
-                height: 75.49,
+                width: 268.33,
+                height: 175.49,
               ),
               SizedBox(
                 height: 46,
@@ -442,7 +449,7 @@ class Item2 extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: 50,
+                height: 10,
               ),
               FlatButton(
                 // focusColor: Color(0xfC09C9D),
@@ -458,6 +465,9 @@ class Item2 extends StatelessWidget {
                   style: GoogleFonts.poppins(fontSize: 24, color: Colors.white),
                   textAlign: TextAlign.center,
                 ),
+              ),
+              SizedBox(
+                height: 85,
               )
             ],
           ),
@@ -473,11 +483,17 @@ class Item3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        // Image.network(
+        //   'https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+        //   width: MediaQuery.of(context).size.width,
+        //   height: 800,
+        //   fit: BoxFit.cover,
+        // ),
         Image.network(
-          'https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+          'https://images.unsplash.com/photo-1627820672014-306953fa4948?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1192&q=80',
           width: MediaQuery.of(context).size.width,
           height: 800,
-          fit: BoxFit.cover,
+          fit: BoxFit.fitWidth,
         ),
         Padding(
           padding: EdgeInsets.fromLTRB(156, 137, 0, 174),
@@ -496,7 +512,7 @@ class Item3 extends StatelessWidget {
                 "Dont Panic,\nit's organic",
                 enableInteractiveSelection: true,
                 toolbarOptions: ToolbarOptions(selectAll: true),
-                style: GoogleFonts.raleway(fontSize: 44, color: Colors.black),
+                style: GoogleFonts.raleway(fontSize: 44, color: Colors.white),
                 textAlign: TextAlign.center,
               ),
               SizedBox(
@@ -531,66 +547,66 @@ class Item3 extends StatelessWidget {
   }
 }
 
-class Item4 extends StatelessWidget {
-  // const Item1({Key key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.network(
-          'https://images.unsplash.com/photo-1596771565570-b99e0852eff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80',
-          width: MediaQuery.of(context).size.width,
-          height: 800,
-          fit: BoxFit.cover,
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(156, 137, 0, 174),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Image.asset(
-                'logo.png',
-                width: 268.33,
-                height: 175.49,
-              ),
-              SizedBox(
-                height: 46,
-              ),
-              SelectableText(
-                "There's no glowing\nwithout double cleansing",
-                enableInteractiveSelection: true,
-                toolbarOptions: ToolbarOptions(selectAll: true),
-                style: GoogleFonts.raleway(fontSize: 35, color: Colors.white),
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: 50,
-              ),
-              FlatButton(
-                // focusColor: Color(0xfC09C9D),
-                hoverColor: Colors.pinkAccent,
-                highlightColor: Colors.black,
-                color: Color(0xffC09C9D),
-                height: 55,
-                minWidth: 226,
-                padding: EdgeInsets.symmetric(vertical: 10),
-                onPressed: () {},
-                child:
-                    // Container(
-                    //   padding: EdgeInsets.symmetric(vertical: 6),
-                    //   width: 226,
-                    //   height: 50,
-                    //   decoration: BoxDecoration(color: Color(0xffC09C9D)),
-                    Text(
-                  'GO TO CATALOG',
-                  style: GoogleFonts.poppins(fontSize: 24, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-              )
-            ],
-          ),
-        )
-      ],
-    );
-  }
-}
+// class Item4 extends StatelessWidget {
+//   // const Item1({Key key}) : super(key: key);
+//   @override
+//   Widget build(BuildContext context) {
+//     return Stack(
+//       children: [
+//         Image.network(
+//           'https://images.unsplash.com/photo-1596771565570-b99e0852eff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80',
+//           width: MediaQuery.of(context).size.width,
+//           height: 800,
+//           fit: BoxFit.cover,
+//         ),
+//         Padding(
+//           padding: EdgeInsets.fromLTRB(156, 137, 0, 174),
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.start,
+//             children: [
+//               Image.asset(
+//                 'logo.png',
+//                 width: 268.33,
+//                 height: 175.49,
+//               ),
+//               SizedBox(
+//                 height: 46,
+//               ),
+//               SelectableText(
+//                 "There's no glowing\nwithout double cleansing",
+//                 enableInteractiveSelection: true,
+//                 toolbarOptions: ToolbarOptions(selectAll: true),
+//                 style: GoogleFonts.raleway(fontSize: 35, color: Colors.white),
+//                 textAlign: TextAlign.center,
+//               ),
+//               SizedBox(
+//                 height: 50,
+//               ),
+//               FlatButton(
+//                 // focusColor: Color(0xfC09C9D),
+//                 hoverColor: Colors.pinkAccent,
+//                 highlightColor: Colors.black,
+//                 color: Color(0xffC09C9D),
+//                 height: 55,
+//                 minWidth: 226,
+//                 padding: EdgeInsets.symmetric(vertical: 10),
+//                 onPressed: () {},
+//                 child:
+//                     // Container(
+//                     //   padding: EdgeInsets.symmetric(vertical: 6),
+//                     //   width: 226,
+//                     //   height: 50,
+//                     //   decoration: BoxDecoration(color: Color(0xffC09C9D)),
+//                     Text(
+//                   'GO TO CATALOG',
+//                   style: GoogleFonts.poppins(fontSize: 24, color: Colors.white),
+//                   textAlign: TextAlign.center,
+//                 ),
+//               )
+//             ],
+//           ),
+//         )
+//       ],
+//     );
+//   }
+// }

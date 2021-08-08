@@ -2,7 +2,6 @@ import 'package:dmahiz_gallery/pages/aboutUs_page.dart';
 import 'package:dmahiz_gallery/pages/contact_page.dart';
 import 'package:dmahiz_gallery/pages/home_page.dart';
 import 'package:dmahiz_gallery/pages/product_page.dart';
-import 'package:dmahiz_gallery/pages/widgets/footer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -118,7 +117,7 @@ class _MainPageState extends State<MainPage> {
                   //user profile
                   Row(
                     children: [
-                      SizedBox(width: 140,)
+                      SizedBox(width: 300,)
                       // Image.asset(
                       //   'head.png',
                       //   width: 40,

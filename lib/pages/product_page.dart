@@ -15,7 +15,6 @@ class ProductPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 137),
               child: Column(children: [
                 Column(
-                  
                   children: [
                     SelectableText(
                       'All Beauty products',
@@ -39,7 +38,7 @@ class ProductPage extends StatelessWidget {
                 SizedBox(
                   height: 42,
                 ),
-    
+
                 //3 top widgets
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,7 +79,7 @@ class ProductPage extends StatelessWidget {
                           SizedBox(
                             height: 21,
                           ),
-                        SelectableText(
+                          SelectableText(
                             'Cream yang diformulasikan untuk melembabkan\nkulit serta mengurangi tampilan noda hitam pada\nkulit. Bahkan, dengan kandungan',
                             enableInteractiveSelection: true,
                             toolbarOptions: ToolbarOptions(selectAll: true),
@@ -111,7 +110,6 @@ class ProductPage extends StatelessWidget {
                           child: Stack(
                             children: [
                               Container(
-                                
                                 padding: EdgeInsets.symmetric(vertical: 11),
                                 color: Color(0xffC09C9D),
                                 width: 152,
@@ -173,8 +171,8 @@ class ProductPage extends StatelessWidget {
                             color: Colors.black,
                             height: 62,
                             hoverColor: Colors.pink[200],
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 133, vertical: 16),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 133, vertical: 16),
                             minWidth: 426,
                             onPressed: () {},
                             child: Text(
@@ -233,8 +231,8 @@ class ProductPage extends StatelessWidget {
                             color: Colors.black,
                             height: 62,
                             hoverColor: Colors.pink[200],
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 133, vertical: 16),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 133, vertical: 16),
                             minWidth: 426,
                             onPressed: () {},
                             child: Text(
@@ -302,8 +300,8 @@ class ProductPage extends StatelessWidget {
                             color: Colors.black,
                             height: 62,
                             hoverColor: Colors.pink[200],
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 133, vertical: 16),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 133, vertical: 16),
                             minWidth: 426,
                             onPressed: () {},
                             child: Text(
@@ -313,15 +311,16 @@ class ProductPage extends StatelessWidget {
                             )),
                       ],
                     ),
-    
+
                     //image mid bot,
-    
+
                     Container(
-                       width: 426, height: 600,
+                      width: 426,
+                      height: 600,
                       child: Stack(
                         children: [
                           Container(
-                            decoration: BoxDecoration(
+                              decoration: BoxDecoration(
                                 // color: Colors.teal,
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: [
@@ -335,7 +334,9 @@ class ProductPage extends StatelessWidget {
                                       spreadRadius: 0.5),
                                 ],
                               ),
-                            child: Image.asset('imgProduct.png',)),
+                              child: Image.asset(
+                                'imgProduct.png',
+                              )),
                           Container(
                             margin: EdgeInsets.fromLTRB(0, 0, 18, 45),
                             child: Column(
@@ -345,11 +346,13 @@ class ProductPage extends StatelessWidget {
                                   height: 161,
                                 ),
                                 Container(
-                                    margin: EdgeInsets.only(left: 59, bottom: 10),
+                                    margin:
+                                        EdgeInsets.only(left: 59, bottom: 10),
                                     child: SelectableText(
                                       'JOIN MEMBER',
                                       enableInteractiveSelection: true,
-                                      toolbarOptions: ToolbarOptions(selectAll: true),
+                                      toolbarOptions:
+                                          ToolbarOptions(selectAll: true),
                                       style: GoogleFonts.raleway(
                                           fontSize: 57,
                                           fontWeight: FontWeight.bold,
@@ -361,27 +364,31 @@ class ProductPage extends StatelessWidget {
                                 ),
                                 Container(
                                     margin: EdgeInsets.only(left: 180),
-                                    child: AnimatedTextKit(animatedTexts: [TyperAnimatedText('And get 10% off\nevery order',
-                                      textStyle: GoogleFonts.poppins(
-                                          fontSize: 30,
-                                          fontWeight: FontWeight.w400,
-                                          color: Colors.white),
-                                      textAlign: TextAlign.right,
-                                      speed: Duration(milliseconds: 200),
-                                    ),
-                                    ], 
-                                    repeatForever:true,)
+                                    child: AnimatedTextKit(
+                                      animatedTexts: [
+                                        TyperAnimatedText(
+                                          'And get 10% off\nevery order',
+                                          textStyle: GoogleFonts.poppins(
+                                              fontSize: 30,
+                                              fontWeight: FontWeight.w400,
+                                              color: Colors.white),
+                                          textAlign: TextAlign.right,
+                                          speed: Duration(milliseconds: 200),
+                                        ),
+                                      ],
+                                      repeatForever: true,
+                                    )
                                     // child: SelectableText(
                                     //   'And get 10% off\nevery order',
                                     //   enableInteractiveSelection: true,
                                     //   toolbarOptions: ToolbarOptions(selectAll: true),
-                                      // style: GoogleFonts.raleway(
-                                      //     fontSize: 32,
-                                      //     fontWeight: FontWeight.w400,
-                                      //     color: Colors.white),
-                                      // textAlign: TextAlign.right,
+                                    // style: GoogleFonts.raleway(
+                                    //     fontSize: 32,
+                                    //     fontWeight: FontWeight.w400,
+                                    //     color: Colors.white),
+                                    // textAlign: TextAlign.right,
                                     // )),
-                                ),
+                                    ),
                                 SizedBox(
                                   height: 30,
                                 ),
@@ -407,7 +414,7 @@ class ProductPage extends StatelessWidget {
                         ],
                       ),
                     ),
-    
+
                     Column(
                       children: [
                         Container(
@@ -457,8 +464,8 @@ class ProductPage extends StatelessWidget {
                             color: Colors.black,
                             height: 62,
                             hoverColor: Colors.pink[200],
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 133, vertical: 16),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 133, vertical: 16),
                             minWidth: 426,
                             onPressed: () {},
                             child: Text(
@@ -473,9 +480,8 @@ class ProductPage extends StatelessWidget {
                 SizedBox(
                   height: 77,
                 ),
-                
               ])),
-              FooterWidget()
+          FooterWidget()
         ],
       ),
     );

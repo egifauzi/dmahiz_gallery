@@ -1,3 +1,6 @@
+import 'package:dmahiz_gallery/pages/privacyAndPolicy.dart';
+import 'package:dmahiz_gallery/pages/siteMap.dart';
+import 'package:dmahiz_gallery/pages/termsandConds.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -222,7 +225,13 @@ class FooterWidget extends StatelessWidget {
                               ),
                               FlatButton(
                                 hoverColor: Colors.pink,
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PrivacyandPolicy()),
+                                  );
+                                },
                                 child: Text(
                                   'Privacy Policy',
                                   style: GoogleFonts.raleway(
@@ -235,7 +244,13 @@ class FooterWidget extends StatelessWidget {
                               ),
                               FlatButton(
                                 hoverColor: Colors.pink,
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => TermsConds()),
+                                  );
+                                },
                                 child: Text(
                                   'Terms and Conditions',
                                   style: GoogleFonts.raleway(
@@ -248,7 +263,13 @@ class FooterWidget extends StatelessWidget {
                               ),
                               FlatButton(
                                 hoverColor: Colors.pink,
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SiteMap()),
+                                  );
+                                },
                                 child: Text(
                                   'Sitemap',
                                   style: GoogleFonts.raleway(
